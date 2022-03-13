@@ -24,8 +24,8 @@ jobs:
       run: chmod +x gradlew
     - name: Build Debug APK
       run: ./gradlew assembleDebug
-    #- name: Build Release APK
-    #  run: ./gradlew assembleRelease
+    - name: Build Release APK
+      run: ./gradlew assembleRelease
     - name: Releasing using Hub
       uses: videejay/action-release-releaseapk@master
       env:
